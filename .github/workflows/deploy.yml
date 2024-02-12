@@ -1,0 +1,46 @@
+name: Deploy wiral media
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SEEDSOFT_PEM" > ~/.ssh/seedsoft_ec2.pem
+          chmod 600 ~/.ssh/seedsoft_ec2.pem
+          ssh-keyscan ec2-13-127-40-16.ap-south-1.compute.amazonaws.com >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+        env:
+            SEEDSOFT_PEM: ${{ secrets.SEEDSOFT_PEM }}
+
+      - name: Executing Commands In Server
+        run: |
+          REMOTE_USER="ubuntu"
+          REMOTE_HOST="ec2-13-127-40-16.ap-south-1.compute.amazonaws.com"
+          REMOTE_KEY="~/.ssh/seedsoft_ec2.pem"
+          REMOTE_PORT="22"
+
+          COMMANDS=(
+            "echo 'connected to seedsoft server'"
+            "cd wiralmedia/"
+            "git pull"
+            "sudo systemctl reload nginx"
+            "echo 'nginx restarted'"
+          )
+
+          SSH_COMMAND="ssh -i $REMOTE_KEY -p $REMOTE_PORT -t $REMOTE_USER@$REMOTE_HOST"
+          FULL_COMMAND=$(printf "%s\n" "${COMMANDS[@]}")
+
+          $SSH_COMMAND << EOF
+          $FULL_COMMAND
+          EOF
