@@ -5,7 +5,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 :root {
-    --primary: #FFE802  !important;
+    --primary: #FFE802  ;
     --secondary: #4611A7;
     --light: #F6F4F9;
     --dark: #04000B;
@@ -440,7 +440,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(98, 34, 204, .9);
+    background: rgba(98, 34, 204, .9); /*here it is */
     transition: .5s;
     opacity: 0;
 }
@@ -597,10 +597,3 @@ h6,
 /* .mb-3 {
     font-family: 'Lexend', sans-serif;
 } */
-.container-xxl py-5{
-    font-family: 'Lexend', sans-serif;
-}
-.container-xxl py-5 bg-primary hero-header{
-    background-color: #FFE802;
-    
-}
