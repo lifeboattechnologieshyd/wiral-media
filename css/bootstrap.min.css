@@ -993,6 +993,7 @@ progress {
   .col-md-6 {
     flex: 0 0 auto;
     width: 50%;
+    color: black !important ;
   }
   .col-md-7 {
     flex: 0 0 auto;
@@ -1150,6 +1151,7 @@ progress {
   .col-lg-3 {
     flex: 0 0 auto;
     width: 25%;
+    color: #000 !important;
   }
   .col-lg-4 {
     flex: 0 0 auto;
@@ -3138,6 +3140,7 @@ fieldset:disabled .btn {
   font-weight: 400;
   color: #6222cc;
   text-decoration: none;
+  color: black !important;
 }
 .btn-link:hover {
   color: #4e1ba3;
@@ -6760,6 +6763,7 @@ fieldset:disabled .btn {
 }
 .text-center {
   text-align: center !important;
+  color: #000 !important;
 }
 .text-decoration-none {
   text-decoration: none !important;
@@ -6814,7 +6818,7 @@ fieldset:disabled .btn {
   color: #04000b !important;
 }
 .text-white {
-  color: #fff !important;
+  color: black !important;/**changes*/
 }
 .text-body {
   color: #726d7b !important;
@@ -6826,7 +6830,8 @@ fieldset:disabled .btn {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 .text-white-50 {
-  color: rgba(255, 255, 255, 0.5) !important;
+  /* color: rgba(255, 255, 255, 0.5) !important; */
+  color: black;
 }
 .text-reset {
   color: inherit !important;
@@ -8142,6 +8147,7 @@ fieldset:disabled .btn {
   }
   .text-md-end {
     text-align: right !important;
+    color: black !important;
   }
   .text-md-center {
     text-align: center !important;
@@ -8651,6 +8657,7 @@ fieldset:disabled .btn {
   .px-lg-5 {
     padding-right: 3rem !important;
     padding-left: 3rem !important;
+    color: #000 !important; /*changed*/
   }
   .py-lg-0 {
     padding-top: 0 !important;
@@ -10026,15 +10033,9 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+/* .home{
+  color: black !important;
+} */
 
-.container-xxl py-5{
-  font-family: 'Lexend', sans-serif;
-}
-.container-xxl py-5 bg-primary hero-header{
-  background-color: #FFE802 !important ;
-  
 
-}
-#count{
-  background-color:#FFE802 ;
-}
+
