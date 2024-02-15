@@ -206,10 +206,10 @@ h6,
         background: #FFFFFF;
     }
 
-    .sticky-top.navbar-light .btn {
+    /* .sticky-top.navbar-light .btn {
         color: var(--dark);
         background: var(--secondary);
-    }
+    } */
 }
 
 
@@ -594,6 +594,50 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
-/* .mb-3 {
-    font-family: 'Lexend', sans-serif;
-} */
+
+
+
+    .floating-icons {
+        position: fixed; /* or absolute */
+        top: 50%; /* adjust as needed */
+        left: 0;
+        transform: translateY(-50%);
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+    
+    .floating-icons nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .floating-icons nav ul li {
+        margin-bottom: 10px; /* Adjust spacing between icons */
+    }
+    
+    .floating-icons nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: #333; /* Adjust color as needed */
+        transition: color 0.3s ease;
+    }
+    
+    .floating-icons nav ul li a:hover {
+        color: #007bff; /* Adjust hover color as needed */
+    }
+    
+    .floating-icons nav ul li a i {
+        margin-right: 10px; /* Adjust space between icon and text */
+        font-size: 24px; /* Adjust icon size */
+    }
+    
+    .floating-icons nav ul li a span {
+        display: none; /* Hide text initially */
+    }
+    
+    .floating-icons nav ul li a:hover span {
+        display: inline-block; /* Show text on hover */
+    }
+    
+ 
