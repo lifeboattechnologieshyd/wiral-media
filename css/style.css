@@ -642,5 +642,20 @@ h6,
     #Image {
         max-width: 175px; /* Set maximum width */
         height: auto; /* Maintain aspect ratio */
+        margin-bottom: 25px; 
     }
+    /* h1 {
+        font-family: 'Lexend Semibold', sans-serif;
+        font-size: 40px;
+    }
+
+    p {
+        font-family: 'Lexend Regular', sans-serif;
+        font-size: 32px;
+    } */
+    /* .for-font h1{
+        
+            font-family: 'Lexend Semibold', sans-serif;
+   
+    } */
   
