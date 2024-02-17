@@ -658,4 +658,20 @@ h6,
             font-family: 'Lexend Semibold', sans-serif;
    
     } */
-  
+  #image{
+    width: 100px;
+    height: auto;
+  }
+  #h5{
+    margin-top: 20px;
+    font-family: lexend, SemiBold;
+  }
+  #para{
+    font-family: lexend, Regular;
+  }
+  #heading{
+    font-family: Lexend, Medium;
+  }
+  #light{
+    font-family: lexend, light;
+  }
