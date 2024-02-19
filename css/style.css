@@ -110,7 +110,7 @@ h6,
     font-family: 'Jost', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: var(--light) !important;
+    color: var(--black) !important;
     outline: none;
     transition: .5s;
 }
@@ -126,7 +126,7 @@ h6,
 }
 
 .navbar-light .navbar-brand h1 {
-    color: #FFFFFF;
+    color: black;
 }
 
 .navbar-light .navbar-brand img {
@@ -675,4 +675,23 @@ h6,
   #light{
     font-family: lexend, light;
   }
-  
+  #test{
+    margin-top: 250px;
+  }
+  #about{
+    margin-top: 100px;
+  }
+  #nav-text{
+    color: black !important;
+  }
+ #ggl{
+    width: 30px;
+    height: auto;
+ }
+#gvw{
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+#project{
+    height: 1000px;
+}
