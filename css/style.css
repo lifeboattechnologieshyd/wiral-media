@@ -5,7 +5,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 :root {
-    --primary: #040404  ;
+    --primary: #4611A7;
     --secondary: #4611A7;
     --light: #F6F4F9;
     --dark: #04000B;
@@ -692,6 +692,12 @@ h6,
     height: auto;
     
  }
+ #Write{
+    font-family: Lexend, SemiBold;
+ }
+ #What{
+    font-family: Lexend, SemiBold;
+ }
 #gvw{
     margin-top: 0;
     margin-bottom: 100px;
@@ -728,4 +734,7 @@ h6,
 .navbar-scrolled .btn {
     background-color: purple !important;
     color: white;
+}
+#contactsnav{
+    padding-left: 100px;
 }
