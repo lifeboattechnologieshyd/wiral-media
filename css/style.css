@@ -209,7 +209,8 @@ h6,
     }
 
     .sticky-top.navbar-light .btn {
-        color: var(--dark);
+        /* color: var(--dark); */
+        color: #DDDDDD;
         background: var(--secondary);
     }
 }
@@ -577,7 +578,8 @@ h6,
 }
 
 .footer .copyright a {
-    color: var(--light);
+    /* color: var(--light); */
+    color: #04000B;
 }
 
 .footer .footer-menu a {
