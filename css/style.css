@@ -785,3 +785,47 @@ h6,
   #newsletter{
     margin-top: 100px !important;
   }
+
+
+  /* OUR SERVICES section */
+  
+  .service-item {
+    transition: transform 0.3s ease-in-out;
+}
+.service-item:hover .google-hover {
+    transform: scale(1.1);  
+    content: url('../google\ dark.svg');  
+}
+
+
+.service-item:hover .winkingface-hover {
+    transform: scale(1.1);  
+    content: url('../winking-face-1.svg');  
+}
+
+
+.service-item:hover .popularity-hover {
+    transform: scale(1.1);  
+    content: url('../popularity-1.svg');  
+}
+
+
+.service-item:hover .meta-hover {
+    transform: scale(1.1);  
+    content: url('../meta-1.svg');  
+}
+
+
+.service-item:hover .glyph-hover {
+    transform: scale(1.1);  
+    content: url('../Glyph-1.svg');  
+}
+
+
+.service-item:hover .seos-hover {
+    transform: scale(1.1);  
+    content: url('../seo\ -2.svg');  
+}
+
+
+
