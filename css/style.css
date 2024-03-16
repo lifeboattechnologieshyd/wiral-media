@@ -829,3 +829,70 @@ h6,
 
 
 
+
+/* .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    background-color: #6a0dad; /* dark purple color on hover */
+    /* transform: translateY(-5px);
+  }
+  .card-title,
+  .card-text {
+    color: white; /* White text color on hover */
+  /* } */
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .card {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  .card:hover img {
+    filter: blur(3px); /* Blur effect on image on hover */
+  }
+   .card:hover {
+    background-color: rgba(106, 13, 173, 0.8); /* dark purple color on hover */
+   } 
+  .portfolio-overlay {
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .portfolio-overlay a {
+    color: black; /* Initial color */
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  .portfolio-overlay a:hover {
+    color: black; /* White color on hover */
+  }
+  .card:hover .portfolio-overlay {
+    opacity: 1;
+  }
+  .portfolio-overlay a {
+    color: white;
+    font-size: 24px;
+  }
+  .card:hover .card-title,
+  .card:hover .card-text {
+    color: white; /* White text color on hover */
+  }
+
+  .card:hover img {
+    filter: brightness(70%) saturate(120%) hue-rotate(280deg); /* Adjust filters for desired effect */
+  }
