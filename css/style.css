@@ -9,6 +9,9 @@
     --secondary: #4611A7;
     --light: #F6F4F9;
     --dark: #04000B;
+    
+
+
 }
 
 
@@ -789,9 +792,8 @@ h6,
 
   /* OUR SERVICES section */
   
-  .service-item {
-    transition: transform 0.3s ease-in-out;
-}
+ 
+  
 .service-item:hover .google-hover {
     transform: scale(1.1);  
     content: url('../google\ dark.svg');  
@@ -826,25 +828,15 @@ h6,
     transform: scale(1.1);  
     content: url('../seo\ -2.svg');  
 }
-
-
-
-
-/* .section-title {
-    text-align: center;
-    margin-bottom: 30px;
+.service-item:hover #para {
+    color: white; 
   }
-  .card {
-    transition: transform 0.3s ease;
-  }
-  .card:hover {
-    background-color: #6a0dad; /* dark purple color on hover */
-    /* transform: translateY(-5px);
-  }
-  .card-title,
-  .card-text {
-    color: white; /* White text color on hover */
-  /* } */
+
+
+
+
+
+ 
   .section-title {
     text-align: center;
     margin-bottom: 30px;
@@ -858,7 +850,7 @@ h6,
     filter: blur(3px); /* Blur effect on image on hover */
   }
    .card:hover {
-    background-color: rgba(106, 13, 173, 0.8); /* dark purple color on hover */
+    background-color: rgba(64, 0, 128, 0.8);  /* dark purple color on hover */
    } 
   .portfolio-overlay {
     position: absolute;
@@ -874,7 +866,10 @@ h6,
     color: black; /* Initial color */
     font-size: 24px;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
+    display: inline-flex; /* Change from inline-block to inline-flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     padding: 5px 10px;
     transition: color 0.3s ease;
   }
@@ -888,11 +883,25 @@ h6,
     color: white;
     font-size: 24px;
   }
-  .card:hover .card-title,
-  .card:hover .card-text {
-    color: white; /* White text color on hover */
+ 
+
+  .card:hover .card-title {
+    color: white; /* White color on hover */
+  }
+  .card:hover #para {
+    color:white; /* White color on hover */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Lift the card up on hover */
+  
+    
   }
 
+
+  .card:hover::before {
+    opacity: 1; /* Show purple color on hover */
+  }
   .card:hover img {
-    filter: brightness(70%) saturate(120%) hue-rotate(280deg); /* Adjust filters for desired effect */
+    filter: brightness(80%); /* Reduce image brightness on hover */
   }
